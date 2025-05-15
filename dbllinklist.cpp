@@ -39,7 +39,7 @@ public:
                 cout << "\nDuplicate not allowed" << endl;
                 return;
             }
-
+            //step 4 newnode.next = start
             newNode->next = START;
 
             //step 5  START.prev = newNode
