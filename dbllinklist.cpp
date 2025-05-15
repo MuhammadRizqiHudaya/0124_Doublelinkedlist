@@ -27,6 +27,7 @@ public:
         cout << "\n enter the roll number of the student :";
         cin >> nim;
 
+        // step 1 allocate memory for new node
         Node *newNode = new Node();
 
         //step 2 assign value
@@ -74,7 +75,7 @@ public:
 
         //insert last node
         if(current->next != NULL)
-        current->next->prev = newNode; //step 9c : current.next.prev = newNode
-            current->next = newNode; // step 9d : current.next = newbie
+            current->next->prev = newNode; //step 9c : current.next.prev = newNode
+        current->next = newNode; // step 9d : current.next = newbie
     }
 };
