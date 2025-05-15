@@ -46,10 +46,16 @@ public:
             if(START !=NULL)
             START->prev = newNode;
 
+
             newNode->prev = NULL;
+
 
             START = newNode;
             return;
         }
+
+        //Step 8 locate position for insertion
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
     }
 };
