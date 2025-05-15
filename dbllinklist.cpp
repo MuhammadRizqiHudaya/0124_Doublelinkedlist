@@ -42,7 +42,7 @@ public:
 
             newNode->next = START;
 
-
+            //step 5  START.prev = newNode
             if(START !=NULL)
             START->prev = newNode;
 
