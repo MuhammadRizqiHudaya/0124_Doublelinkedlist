@@ -29,7 +29,7 @@ public:
 
         Node *newNode = new Node();
 
-
+        //step 2 assign value
         newNode->noMhs = nim;
 
         //step 3 insert at the beginning
