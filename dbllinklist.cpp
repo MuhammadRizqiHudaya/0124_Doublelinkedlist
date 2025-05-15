@@ -32,6 +32,7 @@ public:
 
         newNode->noMhs = nim;
 
+        //step 3 insert at the beginning
         if (START == NULL || nim == START ->noMhs)
         {
             if (START != NULL && nim == START->noMhs)
