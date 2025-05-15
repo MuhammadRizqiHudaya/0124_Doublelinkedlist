@@ -98,6 +98,22 @@ public:
         {
             current = current->next;
         }
+
+        if (current == NULL)
+        {
+            cout << "record not found" << endl;
+            return;
+        }
+
+        //Step 2
+        if (current == START)
+        {
+            START = current->next; //step 2a
+            if (START != NULL)
+            {
+                START->prev = NULL; // step 2b
+            }
+        }
     }   
 
 };
