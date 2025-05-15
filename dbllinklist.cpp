@@ -14,4 +14,37 @@ class DoubleLinkedList
 {
 private:
     Node *START;
+
+public:
+    DoubleLinkedList()
+        {
+            START = NULL;
+        }
+
+    void addnode()
+    {
+        int nim;
+        cout << "\n enter the roll number of the student :";
+        cin >> nim;
+
+        Node *newNode = new Node();
+
+
+        newNode->noMhs = nim;
+
+        if (START == NULL || nim == START ->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDuplicate not allowed" << endl;
+                return;
+            }
+
+            newNode->next = START;
+
+
+            if(START !=NULL)
+            START->prev = newNode;
+        }
+    }
 };
