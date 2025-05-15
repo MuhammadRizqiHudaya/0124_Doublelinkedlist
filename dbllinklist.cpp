@@ -108,11 +108,18 @@ public:
         //Step 2
         if (current == START)
         {
-            START = current->next; //step 2a
+            START = current->next; //step 2a : START = START.next
             if (START != NULL)
             {
-                START->prev = NULL; // step 2b
+                START->prev = NULL; // step 2b : START.prev = NULL
             }
+        }
+        else
+        {
+            //step 3 : link previous node to next node
+            current->prev->next = current->next; 
+
+            
         }
     }   
 
